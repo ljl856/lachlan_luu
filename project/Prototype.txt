@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>Chris</title>
+        <link rel="stylesheet" type="text/css" href="Prototype.css">
+        <script src="PrototypeJVS.js"></script>
+    </head>
+    <body>
+        <div class="Background1">
+            <div class="Logo">
+                <ul>
+                    <li><img src="psm.png" alt="Chris Skyline Logo"></li>
+                    <li><b>Chris Skyline</b></li>
+                    <li><button>Login</button></li>
+                    <li><button>Create account</button></li>
+                    <li><button>Help</button></li>
+                </ul>
+            </div> 
+        </div>
+        <div class="Background2">
+            <div class="Menu">
+                <ul>
+                    <li><p style="color: white;">You don't want to see us!</p></li>
+                    <li><button>Flights</button></li>
+                    <li><button>Hotels & Airbnb</button></li>
+                    <li><button>Cars</button></li>
+                    <li><button>Top Destinations</button></li>
+                    <li><button>Deals</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Background3">
+            <div class="Img">
+                <img src="FlightAd.png" style="width: 1300px; height: auto;">
+                <div class="FMenu">
+                    <div class="FMenu1">
+                        <ul id="M1">
+                            <li><button>Return</button></li>
+                            <li><button>One Way</button></li>
+                            <li><button>RTW</button></li>
+                        </ul>
+                        <ul id="M2">
+                            <li><input type="text" placeholder="Departure City"></li>
+                            <li><input type="text" placeholder="Arrival City"></li>
+                            <li><input type="text" placeholder="Select Dates"></li>
+
+                            <ul id="M3">
+                                <li>
+                                <div class="dropdown-container">
+                                    <button id="travelButton" onclick="toggleMenu()">
+                                        <span id="displayTotal">1 Traveller</span>
+                                        <span id="displayClass">, Economy</span>
+                                    </button>
+
+                                    <div id="Lmao" class="dropdown-menu">
+                                        <ul>
+                                            <li class="dropdown-item">
+                                                <p>Adult</p>
+                                                <button id="minusButton" onclick="minusAdult()">-</button>
+                                                <span id="displayA" class="number-box">1</span>
+                                                <button id="plusButton" onclick="plusAdult()">+</button>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <p>
+                                                    Children
+                                                    <small style="color: gray; font-size: 12px;">2-11 years old</small>
+                                                </p>
+                                                <button id="minusButton" onclick="minusChildren()">-</button>
+                                                <span id="displayC" class="number-box">0</span>
+                                                <button id="plusButton" onclick="plusChildren()">+</button>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <p>
+                                                    Infants
+                                                    <small style="color: gray; font-size: 12px;">Below 2 years old</small>
+                                                </p>
+                                                <button id="minusButton" onclick="minusInfant()">-</button>
+                                                <span id="displayI" class="number-box">0</span>
+                                                <button id="plusButton" onclick="plusInfant()">+</button>
+                                            </li>
+                                            <li><button id="classButton" onclick="travelClassE()">Economy</button></li>
+                                            <li><button id="classButton" onclick="travelClassB()">Business</button></li>
+                                            <li><button id="classButton" onclick="travelClassF()">First</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </li>
+                                <li><button>No Idea</button></li>
+                            </ul>
+                        </ul>
+                        <ul id="M4">
+                            <li><button>Search</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Background4">
+            <div class="HolidayDeals">
+                <br/><br/>
+                <h1>Holiday Package Deals</h1>
+                <br/><br/>
+                <div class="Background4.1" style="position: relative;">
+                    <div class="carousel-wrapper">
+                        <ul id="FlightContent" style="list-style: none;">
+                            <li class="carousel-item">
+                                <a class="slide1" href="">
+                                    <div class="slide1Pt1">
+                                        <img alt="watersldie" src="Flight.png">
+                                    </div>
+                                    <div class="slide1Pt2">
+                                        <img alt="content1" src="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="carousel-item">
+                                <a class="slide1" href="javascript:void(0)">
+                                    <div class="slide1Pt1">
+                                        <img alt="watersldie" src="Flight.png">
+                                    </div>
+                                    <div class="slide1Pt2">
+                                        <img alt="content1" src="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="carousel-item">
+                                <a class="slide1" href="javascript:void(0)">
+                                    <div class="slide1Pt1">
+                                        <img alt="watersldie" src="Flight.png">
+                                    </div>
+                                    <div class="slide1Pt2">
+                                        <img alt="content1" src="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="carousel-item">
+                                <a class="slide1" href="javascript:void(0)">
+                                    <div class="slide1Pt1">
+                                        <img alt="watersldie" src="Flight.png">
+                                    </div>
+                                    <div class="slide1Pt2">
+                                        <img alt="content1" src="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="carousel-item">
+                                <a class="slide1" href="javascript:void(0)">
+                                    <div class="slide1Pt1">
+                                        <img alt="watersldie" src="Flight.png">
+                                    </div>
+                                    <div class="slide1Pt2">
+                                        <img alt="content1" src="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Button">
+                        <button class="slideBtn" onclick="moveSlide(-1)"><b>←</b></button>
+                        <button class="slideBtn" onclick="moveSlide(1)"><b>→</b></button>    
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://www.youtube.com/watch?v=UCPJZoE5Jn4"><button>Touch Us Today</button></a>
+        </div>
+
+    </body>
+</html>

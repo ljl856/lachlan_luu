@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Background for Logo */
+.Background1{
+    background-color: skyblue;
+}
+
+/* LOGO */
+.Logo{
+    background-color: skyblue;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+}
+
+.Logo ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Logo ul li:nth-child(2){
+    color: white;
+    font-size: 40px;
+}
+
+.Logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.Logo button{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.Logo button:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+.Logo li:first-child, 
+.Logo li:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.Logo li:nth-child(3) {
+    margin-left: auto; /* Pushes buttons to the right */
+}
+.Logo li:nth-child(4) button {
+    width: 150px;
+}
+/* LOGO */
+
+/* Background for Menu */
+.Background2{
+    background-color: rgb(68, 67, 67);
+    height: auto;
+}
+
+/* Menu */
+.Menu{
+    background-color:  rgb(68, 67, 67);;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    padding: 8px;
+}
+
+.Menu ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Menu button{
+    border: none;
+    border-radius: 12px;
+    background-color:  rgb(68, 67, 67);;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    height: 50px;
+    padding: 15px 25px;
+    font-size: 14px;
+    color: goldenrod;
+}
+
+.Menu button:hover{
+    background-color: rgb(131, 131, 131);
+}
+
+.Menu p{
+    font-size: 16px;
+    font-style: oblique;
+    font-weight: bold;
+}
+/* Menu */
+
+/* Background for 2 classes Img and FMenu */
+.Background3{
+    position: relative;
+}
+
+.Background3 Img{
+    height: 400px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* FMenu */
+.FMenu{
+    background-color:  rgb(68, 67, 67); /* Adjust the color or add other styles */
+    height:auto;
+    width: 450px;
+    position: absolute; /* Positions .FMenu above the image */
+    top: 20%; /* Adjust this to move .FMenu down/up */
+    left: 30%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center it perfectly */
+    z-index: 10; /* Ensures .FMenu is on top of the image */
+}
+
+.FMenu1 ul{
+    list-style: none;
+}
+
+.FMenu1 ul button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+.FMenu1 #M1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(68, 67, 67);
+}
+
+.FMenu1 #M1 li{
+    padding: 4px 3px;
+}
+
+.FMenu1 #M1 li button{
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(68, 67, 67);
+    color:goldenrod;
+}
+
+.FMenu1 #M1 li button:hover{
+    background-color:   rgb(131, 131, 131);;
+}
+
+.FMenu1 #M2 li{
+    padding: 3px 3px;
+}
+
+.FMenu1 #M2 li input{
+    width: 100%;
+    height: 40px;
+}
+
+.FMenu1 #M3{
+    display: flex;
+    justify-content:space-around;
+}
+
+
+#travelButton {
+    width: 200px;
+
+}
+
+#minusButton {
+    width: 40px;
+    font-size: 30px;
+}
+
+#minusButton:hover,  #plusButton:hover, #travelButton:hover{
+    background-color:  rgb(131, 131, 131);
+}
+
+#plusButton {
+    width: 40px;
+    font-size: 23px;
+}
+
+#classButton {
+    width: 358px;
+}
+
+#classButton:hover {
+    background-color:  rgb(131, 131, 131);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dropdown-item p {
+    margin-right: 10px; /* Add space between the text and the buttons */
+    flex-grow: 1; /* Allow the text to take the available space on the left */
+    cursor: default;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center; /* Align all items vertically */
+    justify-content: space-between; /* Space out the elements */
+    margin-bottom: 10px; /* Add space between each item */
+}
+
+.dropdown-item .controls {
+    display: flex;
+    align-items: center; /* Vertically align buttons and number */
+}
+
+.number-box {
+    display: inline-block;
+    padding: 5px 10px; /* Space inside the box */
+    border: 2px solid #ccc; /* Border around the number */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the number inside the box */
+    width: 40px; /* Adjust width of the box if needed */
+    margin: 0 5px; /* Add spacing between number and buttons */
+    font-size: 16px; /* Adjust font size if necessary */
+    cursor: default;
+}
+
+.FMenu1 #M4{
+    display: flex;
+    justify-content: center;
+}
+
+#M4 button{
+    width: 440px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 3px;
+    background-color: rgb(8, 221, 8);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color:black;
+    justify-content: center;
+}
+/* FMenu */
+
+.Background4{
+    height: 100px;
+    width: auto;
+    text-align: center;
+}
+
+.HolidayDeals {
+    width: 70%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+.Background4 button{
+    width: 300px;
+    height: 40px;    
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Background4 button:hover{
+    background-color: gray;
+}
+
+.slide1 {
+    display: flex;
+}
+
+.slide1Pt1 {
+    width: 320px;
+    height: auto;
+    background-color: blue;
+
+}
+
+.Button {
+    position: absolute;
+    display: flex;
+    z-index: 10;
+    top: 41%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    justify-content: space-between; /* One on left, one on right */
+    transform: translateY(-50%);
+    padding: 0 10px;
+}
+
+.Button button{
+    width: 45px;
+    height: 45px;
+    background-color: rgba(213, 213, 213, 0.374);
+    color: black;
+    font-size: large;
+    border: none;
+    border-radius: 100px;
+}
+
+.Button button:hover {
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#FlightContent {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 30px;
+}
+
+#FlightContent img{
+    width: 320px;
+
+}
+
+.carousel-item {
+    transition: transform 0.5s ease;
+    flex-shrink: 0;
+}
+
+/*Drop down menu*/
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* places it right below the button */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 350px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
